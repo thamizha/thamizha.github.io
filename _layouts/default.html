@@ -8,31 +8,50 @@
     <meta name="description" content="Free and Open Source Tamil Software.">
 
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/styles/components/normalize-css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/styles/main.css">
   </head>
   <body class="home">
-    <header>
-        <div id="logo">
-          <a href="/"><img src="/assets/images/thamizha_logo.png" alt="Thamizha" /></a>
-        </div><!-- #logo -->
+    <header class="header">
+      <div class="top-bar clearfix">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="/"><img src="/assets/images/thamizha_logo.png" alt="Thamizha" /></a>
+          </div><!-- .logo -->
 
-      <nav>
-        <ul class="nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/projects/">Projects</a></li>
-          <li><a href="/community/">Community</a></li>
-          <li><a href="/news/">News</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul><!-- .nav -->
-      </nav>
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contribute">Contribute</a></li>
+              <li><a href="http://groups.google.com/group/freetamilcomputing/">Community</a></li>
+            </ul><!-- .nav -->
+          </nav>
+        </div><!-- .wrapper -->
+      </div><!-- .top-bar -->
+
+      <div class="hero clearfix">
+        <div class="hero-text">
+          <h1 class="hero-title">Free and Open Source Tamil Software</h1>
+          <!--p>We are a group of volunteers who develop, support and work to promote the usage of Tamil in computers.</p-->
+          <p><a class="btn btn-primary">Learn more about us</a></p>
+        </div>
+        <div class="featured-download">
+          <a href="http://code.google.com/p/ekalappai/downloads/detail?name=eKalappai-3.1-build-27012013-installer.exe"><img src="/assets/images/download.png" alt="" /></a>
+        </div>
+      </div>
     </header>
 
     <div class="content">
+      <div class="wrapper">
       {{ content }}
+      </div><!-- .wrapper -->
     </div><!-- .content -->
 
-    <footer>
+    <footer class="footer">
       <p><a href="https://github.com/thamizha/thamizha.github.com#license">Copyleft</a> &copy; 2013 Thamizha.</p>
     </footer>
 
