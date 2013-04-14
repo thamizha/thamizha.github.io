@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="hero-unit">
+    <h2>Free and Open Source Tamil Software</h2>
+    <p>We are a group of volunteers who develop, support and work to promote the usage of Tamil in computers.</p>
+    <p><a class="btn btn-primary">Learn more about us</a></p>
+  </div>
+
+  <h2>What's happening at Thamizha?</h2>
+  <ul class="posts">
+    {% for post in site.posts limit:10 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date_to_string }}</span></li>
+    {% endfor %}
+  </ul>
+</div>
