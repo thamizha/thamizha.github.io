@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  /*background: url(../images/body_bg.png);*/
+}
+
+body,
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.btn {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #eee;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.6);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.hero .btn {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.hero,
+.wrapper,
+.footer {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 1em;
+}
+
+.header {
+  background: #a90329;
+  background: -moz-linear-gradient(left,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+  background: -webkit-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+  background: -o-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+  background: -ms-linear-gradient(left,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+  background: linear-gradient(to right,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+  background: url(../images/hero_bg.png);
+  color: #fff;
+}
+
+.nav {
+  width: 60%;
+  float: right;
+}
+
+.logo {
+  width: 40%;
+  float: left;
+  padding: 10px 0;
+}
+
+.top-bar {
+  background: rgba(0,0,0,0.7);
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+  float: left;
+}
+
+.nav a {
+  display: block;
+  padding: 1em;
+  margin-top: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../images/nav_bg.png) no-repeat center left;
+}
+
+.nav a:hover {
+  opacity: 0.8;
+}
+
+.hero-text {
+  width: 60%;
+  float: left;
+}
+
+.featured-download {
+  width: 40%;
+  float: left;
+  margin-top: 4em;
+}
+
+.content {
+  /*background: url(../images/content_bg.png) repeat-x top center;*/
+}
+
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table thead th {
+  vertical-align: bottom;
+}
+
+.subscription {
+  width: 40%;
+  float: left;
+}
+
+.news {
+  width: 60%;
+  float: left;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+font-weight: 300;
+padding: 0.8em 0 0.4em 0;
+}
+
+.footer {
+  clear: both;
+}

@@ -2,17 +2,24 @@
 layout: default
 ---
 
-<div class="home">
-  <div class="hero-unit">
-    <h2>Free and Open Source Tamil Software</h2>
-    <p>We are a group of volunteers who develop, support and work to promote the usage of Tamil in computers.</p>
-    <p><a class="btn btn-primary">Learn more about us</a></p>
-  </div>
-
+<div class="news">
   <h2>What's happening at Thamizha?</h2>
   <ul class="posts">
     {% for post in site.posts limit:10 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date_to_string }}</span></li>
     {% endfor %}
   </ul>
-</div>
+</div><!-- .news -->
+
+<div class="subscription">
+  <form action="http://groups.google.com/group/freetamilcomputing/boxsubscribe">
+    <fieldset>
+      <legend>Join the community</legend>
+
+      <label for="emailTxt">Enter your email address</label>
+      <input type="text" class="input" placeholder="eg: user@thamizha.com" name="email" id="emailTxt">
+      <input type="submit" name="sub" value="Signup to the mailinglist" class="btn">
+    </fieldset>
+  </form>
+  <p class="note">(We promise not to spam you!)</p>
+</div><!-- .news -->
