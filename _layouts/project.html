@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Thamizha</title>
+
+    <meta name="author" content="Arunan Skanthan">
+    <meta name="description" content="Free & Open Source Tamil Software.">
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/assets/styles/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/vendor/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+  </head>
+  <body>
+    <div class="page row">
+      <header class="span12">
+        <nav class="navbar">
+          <div id="logo" class="brand span2">
+            <a href="http://thamizha.com"><img src="/assets/images/thamizha_logo.png" alt="Thamizha" /></a>
+          </div>
+
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about/">About</a></li>
+              <li class="active"><a href="/projects/">Projects</a></li>
+              <li><a href="/community/">Community</a></li>
+              <li><a href="/news/">News</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+        <div class="content span8">
+          {{ content }}
+        </div><!-- /.content -->
+
+        <div class="sidebar span4">
+            <form action="http://groups.google.com/group/freetamilcomputing/boxsubscribe">
+                <fieldset>
+                <legend>Join the community</legend>
+                    <label for="emailTxt">Enter your email address</label>
+                    <input type="text" class="input" placeholder="eg: user@thamizha.com" name="email" id="emailTxt">
+                <input type="submit" name="sub" value="Signup to the mailinglist" class="btn">
+                </fieldset>
+            </form>
+            <p class="note">(We promise not to spam you!)</p>
+          <p><a href="http://groups.google.com/group/sample-group">Visit this group</a></p>
+          <div class="download">
+            <a href="http://code.google.com/p/ekalappai/downloads/detail?name=eKalappai-3.1-build-27012013-installer.exe"><img src="/assets/images/download.png" alt="" /></a>
+          </div>
+        </div>
+      
+      <footer class="span12">
+        <p><a href="https://github.com/thamizha/thamizha.github.com#license">Copyleft</a> &copy; 2013 Thamizha.</p>
+      </footer>
+    </div><!-- /.page -->
+
+    <!-- <a href="http://github.com/thamizha"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    <script src="/assets/scripts/vendor/bootstrap.min.js"></script>
+    <script src="/assets/scripts/vendor/strftime.js"></script>
+    <script src="/assets/scripts/main.js"></script>
+
+    <script>
+    var en_EN = {
+      shortMonths: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
+                     'Sep', 'Oct', 'Nov', 'Dec' ],
+      AM: 'AM',
+      PM: 'PM'
+    }
+
+    $(document).ready(function() {
+      var html = "";
+      $.ajax({
+        url : "https://api.github.com/orgs/Thamizha/repos",
+        dataType : "jsonp",
+        success : function ( returndata ) {
+          $("#num-repos").text(returndata.data.length);
+          $.each( returndata.data, function ( i, item ) {
+            html += '<li class="span4">' +
+              '<div class="thumbnail">' +
+              '<div class="caption">' +
+              '<h3><a href="' + this.html_url + '">' + this.name + '</a></h3>' +
+              '<p><b>' + this.language + '</b></p>' +
+              '<p>' + this.description + '</p>' +
+              '<ul>' +
+              //'<li>' + 'Updated: ' + strftime("%a, %d %b %Y %H:%M:%S", this.updated_at) + '</li>' +
+              '<li>' + 'Issues: ' + this.open_issues + '</li>' +
+              '</ul>' +
+              '</div>' +
+              '</div>' +
+              '</li>';
+          });
+        $( '.project-list' ).append( html );
+      }
+    });
+
+      $.getJSON("https://api.github.com/orgs/Thamizha/members?callback=?", function (result) {
+        var members = result.data;
+
+        $(function () {
+          $("#num-members").text(members.length);
+        });
+      });
+   // var project = $('#project').attr('name');
+    var baseurl = "https://api.github.com/";
+    var url = baseurl + "repos/thamizha/";
+    url += "sample-project";
+    url += "/collaborators";
+    $.ajax({
+dataType: 'jsonp',
+url: url,
+success: function(response){
+for (var i in response.data){
+$('.collab').append('<p>'+response.data[i].login+'</p>');
+}
+        }
+    });
+});
+    </script>
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-294888-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
