@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Thamizha</title>
 
@@ -13,61 +12,54 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/styles/main.css">
   </head>
-  <body>
-    <div class="page row">
-      <header class="span12">
-        <nav class="navbar">
-          <div id="logo" class="brand span2">
-            <a href="http://thamizha.com"><img src="/assets/images/thamizha_logo.png" alt="Thamizha" /></a>
-          </div>
+  <body class="home">
+    <header class="header">
+      <div class="top-bar clearfix">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="/"><img src="/assets/images/thamizha_logo.png" alt="Thamizha" /></a>
+          </div><!-- .logo -->
 
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="contribute.html">Contribute</a></li>
+              <li><a href="http://groups.google.com/group/freetamilcomputing/">Community</a></li>
+            </ul><!-- .nav -->
+          </nav>
+        </div><!-- .wrapper -->
+      </div><!-- .top-bar -->
 
-          <!-- Everything you want hidden at 940px or less, place within here -->
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li class="active"><a href="/projects/">Projects</a></li>
-              <li><a href="/community/">Community</a></li>
-              <li><a href="/news/">News</a></li>
-              <li><a href="/contact/">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-        <div class="content span8">
-          {{ content }}
-        </div><!-- /.content -->
-
-        <div class="sidebar span4">
-            <form action="http://groups.google.com/group/freetamilcomputing/boxsubscribe">
-                <fieldset>
-                <legend>Join the community</legend>
-                    <label for="emailTxt">Enter your email address</label>
-                    <input type="text" class="input" placeholder="eg: user@thamizha.com" name="email" id="emailTxt">
-                <input type="submit" name="sub" value="Signup to the mailinglist" class="btn">
-                </fieldset>
-            </form>
-            <p class="note">(We promise not to spam you!)</p>
-          <p><a href="http://groups.google.com/group/sample-group">Visit this group</a></p>
-          <div class="download">
-            <a href="http://code.google.com/p/ekalappai/downloads/detail?name=eKalappai-3.1-build-27012013-installer.exe"><img src="/assets/images/download.png" alt="" /></a>
-          </div>
+      <div class="hero clearfix">
+        <div class="hero-text">
+          <h1 class="hero-title">Free and Open Source Tamil Software</h1>
+          <!--p>We are a group of volunteers who develop, support and work to promote the usage of Tamil in computers.</p-->
+          <p><a class="btn btn-primary">Learn more about us</a></p>
         </div>
-      
-      <footer class="span12">
-        <p><a href="https://github.com/thamizha/thamizha.github.com#license">Copyleft</a> &copy; 2013 Thamizha.</p>
-      </footer>
-    </div><!-- /.page -->
+        <div class="featured-download">
+          <a href="http://code.google.com/p/ekalappai/downloads/detail?name=eKalappai-3.1-build-27012013-installer.exe"><img src="/assets/images/download.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
 
-    <!-- <a href="http://github.com/thamizha"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a> -->
+    <div class="content">
+      <div class="wrapper">
+      {{ content }}
+      </div><!-- .wrapper -->
+    </div><!-- .content -->
+
+    <footer class="footer">
+      <p><a href="https://github.com/thamizha/thamizha.github.com#license">Copyleft</a> &copy; 2013 Thamizha.</p>
+    </footer>
+
+    <!--
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+    -->
+
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
