@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="news">
-  <h2>What's happening at Thamizha?</h2>
+  <h2>தமிழாவில் என்ன நடக்கிறது?</h2>
   <ul class="posts">
     {% for post in site.posts limit:10 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date_to_string }}</span></li>
@@ -13,13 +13,13 @@ layout: default
 
 <div class="subscription">
   <form action="http://groups.google.com/group/freetamilcomputing/boxsubscribe">
-    <fieldset>
-      <legend>Join the community</legend>
+    <fieldset> 
+      <legend>சமூகத்தில் இணையவும்</legend>
 
-      <label for="emailTxt">Enter your email address</label>
-      <input type="text" class="input" placeholder="eg: user@thamizha.com" name="email" id="emailTxt">
-      <input type="submit" name="sub" value="Signup to the mailinglist" class="btn">
+      <label for="emailTxt">உங்களுடைய மின்னஞ்சல் முகவரியை உள்ளிடவும்</label>
+      <input type="text" class="input" placeholder="eg: பயனர்@thamizha.com" name="email" id="emailTxt">
+      <input type="submit" name="sub" value="இந்த குழுவை பார்க்கவும்" class="btn">
     </fieldset>
   </form>
-  <p class="note">(We promise not to spam you!)</p>
+  <p class="note">(நாங்கள் கண்டிப்பாக ஸ்பேம் மடலை அனுப்ப மாட்டோம்!)</p>
 </div><!-- .news -->
