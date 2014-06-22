@@ -39,12 +39,6 @@
           <!--p>We are a group of volunteers who develop, support and work to promote the usage of Tamil in computers.</p-->
           <!--<p><a class="btn btn-primary">Learn more about us</a></p> -->
         </div>
-        <div class="featured-download">
-          <img src="/assets/images/download.png" alt="" />
-		  <div class="featured-download-text"> 
-			<a href="https://drive.google.com/uc?id=0Bw25oWQKNnRyNlJQTjFfV2k4VVU&export=download">எ-கலப்பை தரவிறக்க</small></a>
-		  </div>
-        </div>
       </div>
     </header>
 
@@ -58,75 +52,7 @@
       <p><a href="https://github.com/thamizha/thamizha.github.com#license">Copyleft</a> &copy; 2013 Thamizha.</p>
     </footer>
 
-    <!--
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-    -->
 
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-    <script src="/assets/scripts/vendor/bootstrap.min.js"></script>
-    <script src="/assets/scripts/vendor/strftime.js"></script>
-    <script src="/assets/scripts/main.js"></script>
-
-    <script>
-    var en_EN = {
-      shortMonths: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
-                     'Sep', 'Oct', 'Nov', 'Dec' ],
-      AM: 'AM',
-      PM: 'PM'
-    }
-
-    $(document).ready(function() {
-      var html = "";
-      $.ajax({
-        url : "https://api.github.com/orgs/Thamizha/repos",
-        dataType : "jsonp",
-        success : function ( returndata ) {
-          $("#num-repos").text(returndata.data.length);
-          $.each( returndata.data, function ( i, item ) {
-            html += '<li class="span4">' +
-              '<div class="thumbnail">' +
-              '<div class="caption">' +
-              '<h3><a href="' + this.html_url + '">' + this.name + '</a></h3>' +
-              '<p><b>' + this.language + '</b></p>' +
-              '<p>' + this.description + '</p>' +
-              '<ul>' +
-              //'<li>' + 'Updated: ' + strftime("%a, %d %b %Y %H:%M:%S", this.updated_at) + '</li>' +
-              '<li>' + 'Issues: ' + this.open_issues + '</li>' +
-              '</ul>' +
-              '</div>' +
-              '</div>' +
-              '</li>';
-          });
-        $( '.project-list' ).append( html );
-      }
-    });
-
-      $.getJSON("https://api.github.com/orgs/Thamizha/members?callback=?", function (result) {
-        var members = result.data;
-
-        $(function () {
-          $("#num-members").text(members.length);
-        });
-      });
-   // var project = $('#project').attr('name');
-    var baseurl = "https://api.github.com/";
-    var url = baseurl + "repos/thamizha/";
-    url += "sample-project";
-    url += "/collaborators";
-    $.ajax({
-dataType: 'jsonp',
-url: url,
-success: function(response){
-for (var i in response.data){
-$('.collab').append('<p>'+response.data[i].login+'</p>');
-}
-        }
-    });
-});
-    </script>
     
     <script type="text/javascript">
       var _gaq = _gaq || [];

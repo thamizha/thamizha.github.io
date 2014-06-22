@@ -1,0 +1,10 @@
+﻿- name: எ-கலப்பை
+  project_image: download.png
+  url: https://github.com/thamizha/ekalappai
+  download_url: https://github.com/thamizha/ekalappai/releases/download/3.0.2/eKalappai-3.0.2-installer.exe
+  summary: வின்டோஸ் கணினிகளில் தமிழில் எழுத பயன்படும் மென்பொருள்
+  project_admins: முகுந்த்(mugunth)
+  project_contributors:	[முகுந்த்(mugunth), சேது , மானிக்கவாசகம்(manikk),	vijayk]
+  description: எ-கலப்பை கொண்டு விண்டோஸ் கணினிகளில் தமிழில் தட்டச்சு செய்ய முடியும். 
+  license: GNU GPL 
+  latest_version: 3.0.2
