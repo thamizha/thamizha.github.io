@@ -7,4 +7,14 @@
   project_contributors:	[முகுந்த்(mugunth), சேது , மானிக்கவாசகம்(manikk),	vijayk]
   description: எ-கலப்பை கொண்டு விண்டோஸ் கணினிகளில் தமிழில் தட்டச்சு செய்ய முடியும். 
   license: GNU GPL 
-  latest_version: 3.0.2
+  latest_version: 3.0.2  
+- name: பயர்பாக்ஸ் தமிழ்விசை
+  project_image: download.png
+  url: https://github.com/thamizha/firefox-tamilvisai
+  download_url: https://addons.mozilla.org/firefox/downloads/latest/2994/addon-2994-latest.xpi
+  summary: பயர்பாக்ஸ் உலாவியில் தமிழில் எழுத பயன்படும் மென்பொருள்
+  project_admins: கோபி(higopi), முகுந்த்(mugunth)
+  project_contributors:	[முகுந்த்(mugunth), கோபி(higopi), ரவி (Voice on Wings)  ]
+  description: The tamilkey is a keyboard extension for typing tamil in all mozilla products. Tamilkey supports most of the popular keyboard layouts used among tamils. currently tamilkey supports Anjal, Tamilnet99, Bamini, Old and New Tamil typewriter,Avvai keyboard layouts.  Tamilkey is available at Firefox Addons page also.
+  license: Mozilla Public License, version 1.1
+  latest_version: 0.4.3
