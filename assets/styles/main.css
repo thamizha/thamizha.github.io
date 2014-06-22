@@ -139,9 +139,10 @@ h3 {
 }
 
 .featured-download-text, .project-download-text {
-    bottom: 88px;
+    bottom: 100px;
     font-size: 16px;
-    left: 52px;
+    left: 30px;
+	text-align: center;
     position: relative;
     width: 138px;
 }

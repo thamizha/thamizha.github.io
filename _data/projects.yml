@@ -1,20 +1,48 @@
 ﻿- name: எ-கலப்பை
   project_image: download.png
   url: https://github.com/thamizha/ekalappai
+  isdownloadable: true
   download_url: https://github.com/thamizha/ekalappai/releases/download/3.0.2/eKalappai-3.0.2-installer.exe
+  websiteurl:
   summary: வின்டோஸ் கணினிகளில் தமிழில் எழுத பயன்படும் மென்பொருள்
   project_admins: முகுந்த்(mugunth)
-  project_contributors:	[முகுந்த்(mugunth), சேது , மானிக்கவாசகம்(manikk),	vijayk]
+  project_contributors:	[முகுந்த்(mugunth), சேது(KaaSethu) , மானிக்கவாசகம்(manikk),	vijayk]
   description: எ-கலப்பை கொண்டு விண்டோஸ் கணினிகளில் தமிழில் தட்டச்சு செய்ய முடியும். 
   license: GNU GPL 
   latest_version: 3.0.2  
 - name: பயர்பாக்ஸ் தமிழ்விசை
   project_image: download.png
   url: https://github.com/thamizha/firefox-tamilvisai
+  isdownloadable: true
   download_url: https://addons.mozilla.org/firefox/downloads/latest/2994/addon-2994-latest.xpi
+  websiteurl:
   summary: பயர்பாக்ஸ் உலாவியில் தமிழில் எழுத பயன்படும் மென்பொருள்
   project_admins: கோபி(higopi), முகுந்த்(mugunth)
-  project_contributors:	[முகுந்த்(mugunth), கோபி(higopi), ரவி (Voice on Wings)  ]
+  project_contributors:	[முகுந்த்(mugunth), கோபி(higopi), ரவி(ravi-sam)  ]
   description: The tamilkey is a keyboard extension for typing tamil in all mozilla products. Tamilkey supports most of the popular keyboard layouts used among tamils. currently tamilkey supports Anjal, Tamilnet99, Bamini, Old and New Tamil typewriter,Avvai keyboard layouts.  Tamilkey is available at Firefox Addons page also.
   license: Mozilla Public License, version 1.1
   latest_version: 0.4.3
+- name: தமிழ் எழுத்துரு பொதி
+  project_image: download.png
+  url: https://github.com/thamizha/tamil-fonts
+  isdownloadable: true
+  download_url: https://github.com/thamizha/tamil-fonts/releases/download/v1.0/thamizha-tamil-fonts-installer-1.0.exe
+  websiteurl: 
+  summary: தமிழ் யூனிகோட் எழுத்துருக்கள் அடங்கிய பொதி
+  project_admins: முகுந்த்(mugunth)
+  project_contributors: முகுந்த்(mugunth), ஶ்ரீகாந்த்(srikanthlogic), சேது(KaaSethu)
+  description: தமிழ் யூனிகோட் எழுத்துருக்கள் அடங்கிய பொதி. தற்போதைய பதிப்பில் 17 கட்டற்ற தமிழ் யூனிகோட் எழுத்துருக்கள் இணைக்கப்பட்டுள்ளன.
+  license: GNU GPLv3
+  latest_version: 1.0  
+- name: பெயர்
+  project_image: peyar.png
+  url: https://github.com/thamizha/peyar
+  isdownloadable: false
+  download_url: 
+  websiteurl: http://www.peyar.in/
+  summary: தூயத் தமிழ் குழந்தை பெயர்கள் பட்டியல்
+  project_admins: கார்த்திக்(yemkay), ரவிசங்கர்
+  project_contributors:	[கார்த்திக்(yemkay), ரவிசங்கர்]
+  description: குழந்தைகளுக்கு பெயர்வைக்க பல்லாயிரம் தூயத் தமிழ் பெயர்களை கொண்டுள்ளது இந்த வலைத்சேவை. இதில் ஆண் பெண் பெயர்களை அகர வரிசையில் தேடலாம். குறிப்பிட்ட எழுத்தில் தொடங்கும் பெயர்களின் பட்டியலை பதிவிறக்கும் செய்யவும் வசதியுள்ளது.
+  license: GNU GPLv3
+  latest_version: 1.0

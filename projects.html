@@ -13,11 +13,17 @@ layout: project
 
 {% for project in site.data.projects %}
   <section>
-	    <div class="project-download pull-right">
-          <img class="inline"  src="/assets/images/{{ project.project_image }}" alt="" />
+	    <div class="project-download pull-right {{project.isdownloadable}}">
+		{% if project.isdownloadable == true %}
+		<img class="inline"  src="/assets/images/{{ project.project_image }}" alt="" width="280" />
 		  <div class="project-download-text"> 
-			<a href="{{project.download_url}}">{{ project.name }}  தரவிறக்க</small></a>
+				<a href="{{project.download_url}}">{{ project.name }}  தரவிறக்க</small></a>						
 		  </div>
+		{% else %}
+			<a target="_blank" href="{{project.websiteurl}}">
+				<img class="inline"  src="/assets/images/{{ project.project_image }}" alt="" width="280" /> 
+			</a>	
+		{% endif %}				
         </div>		
     <h2><a href="{{ project.url }}">{{ project.name }} {{project.latest_version}}</a></h2>
     <h3>{{ project.summary }}</h3>    
