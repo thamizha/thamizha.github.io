@@ -228,3 +228,22 @@ section a, section a.active, section a.hover  {
     font-size: 12px;
     color: #4b4a4a;
 }
+
+/* Fieldset Stuff */
+
+fieldset {
+    border: 1px solid silver;
+    margin: 10px;
+    padding: 10px;
+    min-width: 100px;
+    display: inline-block;
+}
+
+fieldset label{
+    margin-right: 10px;
+    position: relative;
+}
+
+fieldset input{
+    float: left;
+}
