@@ -247,3 +247,19 @@ fieldset label{
 fieldset input{
     float: left;
 }
+
+/* Loading thing */
+
+#loading {
+    position:absolute;z-index:999;
+}
+
+#loading div {
+    display:table-cell;
+    width:960px;
+    height:400px;
+    margin: 10px auto;
+    background:#fff;
+    text-align:center;
+    vertical-align:middle;
+}
