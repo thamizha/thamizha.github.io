@@ -90,7 +90,7 @@ h3 {
 }
 
 .nav {
-  width: 80%;
+  width: 60%;
   float: right;
 }
 
@@ -190,9 +190,10 @@ table thead th {
   float: left;
 }
 
-.news {
+.news, .about {
   width: 60%;
   float: left;
+  margin-top: 35px;
 }
 
 fieldset {
@@ -246,4 +247,26 @@ fieldset label{
 
 fieldset input{
     float: left;
+}
+
+/* Loading thing */
+
+#loading {
+    position:absolute;z-index:999;
+}
+
+#loading div {
+    display:table-cell;
+    width:960px;
+    height:400px;
+    margin: 10px auto;
+    background:#fff;
+    text-align:center;
+    vertical-align:middle;
+} 
+
+.intro {
+    margin-top: 10px;
+    font-weight: bold;
+    width: 60%;
 }
