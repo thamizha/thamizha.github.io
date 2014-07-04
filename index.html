@@ -8,8 +8,17 @@ layout: home
 
 </div><!-- .about -->
 
+<div class="news">
+  <h2>தமிழாவில் என்ன நடக்கிறது?</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date_to_string }}</span></li>
+    {% endfor %}
+  </ul>
+</div><!-- .news -->
 
-<div class="subscription">
+
+<div class="subscription homeside">
   <form action="http://groups.google.com/group/freetamilcomputing/boxsubscribe">
     <fieldset> 
       <legend>சமூகத்தில் இணையவும்</legend>
