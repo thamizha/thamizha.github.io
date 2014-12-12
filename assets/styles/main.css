@@ -186,7 +186,11 @@ h3 {
 .content {
   /*background: url(../images/content_bg.png) repeat-x top center;*/
 }
-
+@media only screen and (max-width : 640px) {
+  .content {
+    padding: 1em;
+  }
+}
 
 table {
   max-width: 100%;
