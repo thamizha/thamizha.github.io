@@ -240,6 +240,17 @@ table thead th {
   margin-top: 35px;
 }
 
+@media only screen and (max-width : 640px) {
+  .news,
+  .about {
+    width: 100%;
+  }
+  
+  .news {
+    margin-top: 100px;
+  }
+}
+
 fieldset {
   border: none;
 }
