@@ -135,6 +135,13 @@ h3 {
   background: url(../images/nav_bg.png) no-repeat center left;
 }
 
+
+@media only screen and (max-width : 640px) {
+  .nav a {
+   padding: 0.5em 0.75em;
+  }
+}
+
 .nav a:hover {
   opacity: 0.8;
 }
