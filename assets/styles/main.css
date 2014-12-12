@@ -100,6 +100,12 @@ h3 {
   padding: 10px 0;
 }
 
+@media only screen and (max-width : 640px) {
+  .logo {
+    width: 100%;
+  }
+}
+
 .top-bar {
   background: rgba(0,0,0,0.7);
 }
