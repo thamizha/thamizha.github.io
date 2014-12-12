@@ -22,7 +22,7 @@ h1 {
   font-size: 34px;
 }
 @media only screen and (max-width : 640px) {
-  .h1 {
+  h1 {
     font-size: 24px;
   }
 }
@@ -162,6 +162,12 @@ h3 {
   width: 40%;
   float: left;
   margin-top: 1em;
+}
+
+@media only screen and (max-width : 640px) {
+  .featured-download {
+    width: 100%;
+  }
 }
 
 .featured-download-text, .project-download-text {
