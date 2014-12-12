@@ -165,7 +165,8 @@ h3 {
 }
 
 @media only screen and (max-width : 640px) {
-  .featured-download {
+  .featured-download,
+  .project-download {
     width: 100%;
   }
 }
