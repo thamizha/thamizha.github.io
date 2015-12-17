@@ -27,7 +27,6 @@ If you are a developer and like to contribute to development you can check this 
 
 If you like to discuss about development and new features you can either use the following:
 * Google group: http://groups.google.com/group/freetamilcomputing
-* Disussion forum: http://thamizha.com/forum
 
 I thank Jegadesan & all other members of thamizha.com team who have contributed to this project.
 

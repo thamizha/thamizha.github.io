@@ -29,7 +29,6 @@ Tamil99 and Tamil-typewriter keymaps are made so as to near fully conform to Tam
 eKalappai 3.0 can be downloaded in the following URLs:
 ------------------------------------------------------
 <ul>
-	<li><a href="http://thamizha.com/project/ekalappai">http://thamizha.com/project/ekalappai</a></li>
 	<li><a href="http://code.google.com/p/ekalappai/downloads/list">http://code.google.com/p/ekalappai/downloads/list</a></li>
 </ul>
 
